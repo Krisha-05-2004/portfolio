@@ -6,30 +6,144 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="detail-page">
-    <a href="index.html" class="back-link">← Back</a>
 
-    <div class="page-title">
-      <h1>Experience</h1>
-      <p>Internships and activities</p>
-    </div>
+<div class="detail-page">
+  <a href="index.html" class="back-link">← Back</a>
 
-    <div class="page-grid">
-      <div class="card">
-        <h3>EHS Internship</h3>
-        <p>Worked on Environment, Health, and Safety practices.</p>
-      </div>
-
-      <div class="card">
-        <h3>NSS Volunteer</h3>
-        <p>Community outreach, leadership activities, and national camps.</p>
-      </div>
-
-      <div class="card">
-        <h3>Self-Defense Instructor</h3>
-        <p>Conducted workshops and trained students in martial arts.</p>
-      </div>
-    </div>
+  <div class="page-title">
+    <h1>Experience</h1>
+    <p>Internships and activities</p>
   </div>
+
+  <div class="page-grid">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>EHS Intern</h3>
+      <p><span class="highlight">Biocon Limited</span> • Bangalore • 2025</p>
+      <ul>
+        <li>Worked in Environment, Health &amp; Safety (EHS) department</li>
+        <li>Conducted safety audits &amp; compliance checks</li>
+        <li>Handled documentation and workplace safety standards</li>
+      </ul>
+      <img src="Experiences/EHS.jpg" class="cert-img">
+      <button class="view-btn" onclick="showPopup('Experiences/EHS.jpg','EHS Intern','Biocon Limited • 2025')">View</button>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="card-icon">🤝</div>
+      <h3>Intern</h3>
+      <p><span class="highlight">Diya Foundation</span> • Bangalore • 2022</p>
+      <ul>
+        <li>Organized educational workshops</li>
+        <li>Worked with underprivileged students</li>
+        <li>Improved communication &amp; leadership skills</li>
+      </ul>
+      <img src="Experiences/diya.jpg" class="cert-img">
+      <button class="view-btn" onclick="showPopup('Experiences/diya.jpg','Intern','Diya Foundation • 2022')">View</button>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="card-icon">🥋</div>
+      <h3>Karate Instructor</h3>
+      <p>Self-Defense &amp; Martial Arts</p>
+      <ul>
+        <li>1st Dan Black Belt</li>
+        <li>Conducted self-defense workshops</li>
+        <li>Trained students in discipline &amp; techniques</li>
+      </ul>
+      <img src="Experiences/karate.jpeg" class="cert-img">
+      <button class="view-btn" onclick="showPopup('Experiences/karate.jpeg','Karate Instructor','Self-Defense & Martial Arts')">View</button>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card">
+      <div class="card-icon">🎓</div>
+      <h3>Technical Training Program</h3>
+      <p><span class="highlight">India Space Lab</span> • 2026</p>
+      <ul>
+        <li>Drone Technology &amp; Remote Sensing</li>
+        <li>CanSat &amp; CubeSat fundamentals</li>
+        <li>GIS &amp; Disaster Management basics</li>
+      </ul>
+      <img src="Experiences/Indian_space_lab.png" class="cert-img">
+      <button class="view-btn" onclick="showPopup('Experiences/Indian_space_lab.png','Technical Training Program','India Space Lab • 2026')">View</button>
+    </div>
+
+  </div>
+</div>
+
+<!-- POPUP — style is written inline so style.css can NEVER override it -->
+<div id="popup" style="
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 999999;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+">
+  <div id="popup-box" style="
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    background: #0f172a;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+    text-align: center;
+  ">
+    <button onclick="hidePopup()" style="
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      width: 36px;
+      height: 36px;
+      border: none;
+      border-radius: 50%;
+      background: #ef4444;
+      color: white;
+      font-size: 22px;
+      line-height: 36px;
+      cursor: pointer;
+    ">×</button>
+
+    <img id="popup-img" src="" alt="Certificate" style="
+      display: block;
+      max-width: 80vw;
+      max-height: 70vh;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #020617;
+    ">
+    <embed id="popup-pdf" src="" type="application/pdf" style="
+  display: none;
+  width: 80vw;
+  height: 70vh;
+  border-radius: 12px;
+">
+    <p id="popup-title" style="color:#f8fafc; font-weight:700; margin-top:12px; font-size:1rem;"></p>
+    <p id="popup-sub" style="color:#94a3b8; font-size:0.85rem; margin-top:4px;"></p>
+
+    <button onclick="hidePopup()" style="
+      margin-top: 14px;
+      padding: 10px 28px;
+      border: none;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6366f1, #22c55e);
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+    ">Close</button>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+
 </body>
 </html>

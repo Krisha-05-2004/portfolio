@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get in Touch | Sai Krisha K</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init('E7YAd3KSFvPNNBQP9');
+    })();
+  </script>
+</head>
+
+<body class="get-touch-page">
+
+<a href="index.html" class="back-link">← Back</a>
+
+<div class="touch-container">
+
+  <h1>Get In Touch</h1>
+  <p>Feel free to reach out anytime 🚀</p>
+
+  <form id="contact-form" class="touch-form">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+
+    <input type="text" name="email" placeholder="Your Email or Phone" required>
+
+    <input type="text" name="subject" placeholder="Subject" required>
+
+    <textarea name="message" placeholder="Your Message..." required></textarea>
+
+    <button type="submit">🚀 Send Message</button>
+
+  </form>
+
+</div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm("service_e9tsf06", "template_b1do849", this)
+    .then(() => {
+      alert("✅ Message Sent Successfully!");
+      this.reset();
+    })
+    .catch(() => {
+      alert("❌ Failed to send message");
+    });
+});
+</script>
+
+</body>
+</html>
