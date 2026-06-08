@@ -1,127 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Certificates | Sai Krisha K</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="detail-page">
-  <a href="index.html" class="back-link">← Back</a>
+  <div class="detail-page">
+    <a href="index.html" class="back-link">← Back</a>
 
-  <div class="page-title">
-    <h1>Certificates 🏅</h1>
-    <p>Explore my certifications — technical &amp; environmental</p>
+    <div class="page-title">
+      <h1>Certificates 🏅</h1>
+      <p>Explore my certifications — technical &amp; environmental</p>
+    </div>
+
+    <div class="page-grid">
+
+      <!-- 1 -->
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Data Tableau Workshop</h3>
+        <p><span class="highlight">Jobaaj Learnings</span> • 2024</p>
+        <p>Gained practical knowledge in data visualization and dashboard creation.</p>
+        <img src="certificates/data tableau workshop.jpg" class="cert-img" alt="Tableau Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/data tableau workshop.jpg','Data Tableau Workshop','Jobaaj Learnings')">View</button>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <div class="card-icon">🚀</div>
+        <h3>Winter Internship Technical Training</h3>
+        <p><span class="highlight">India Space Lab</span> • 2026</p>
+        <p>Drone Technology, CanSat, CubeSat, Rocketry, Remote Sensing, GIS &amp; Disaster Management.</p>
+        <img src="certificates/Indian space lab.jpeg" class="cert-img" alt="India Space Lab Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Indian space lab.jpeg','Winter Internship Technical Training','India Space Lab • 2026')">View</button>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <div class="card-icon">🌍</div>
+        <h3>Google Earth Engine Workshop</h3>
+        <p><span class="highlight">NPTEL+</span> • 2025</p>
+        <p>Hands-on learning in geospatial analysis and hydrological data processing.</p>
+        <img src="certificates/workshop on google earth engine.jpg" class="cert-img"
+          alt="Google Earth Engine Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/workshop on google earth engine.jpg','Google Earth Engine for Hydrological Applications','NPTEL+ Workshop • 2025')">View</button>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <div class="card-icon">🏆</div>
+        <h3>Basic Environmental Engineering</h3>
+        <p><span class="highlight">NPTEL Elite</span> • 2025</p>
+        <p>Pollution control and sustainable environmental practices.</p>
+        <img src="certificates/Basic Environmental Engineering and Pollution Abatement.png" class="cert-img"
+          alt="Basic Env Engg Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Basic Environmental Engineering and Pollution Abatement.png','Basic Environmental Engineering & Pollution Abatement','NPTEL Elite Certification')">View</button>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <div class="card-icon">🪨</div>
+        <h3>Environmental Geosciences</h3>
+        <p><span class="highlight">NPTEL</span>• 2026</p>
+        <p>Earth systems, geology, and environmental processes.</p>
+        <img src="certificates/Environmental Geosciences.png" class="cert-img"
+          alt="Environmental Geosciences Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Environmental Geosciences.png','Environmental Geosciences','NPTEL Certification')">View</button>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <div class="card-icon">🌿</div>
+        <h3>Environmental Science</h3>
+        <p><span class="highlight">NPTEL Elite</span>• 2024</p>
+        <p>Ecosystem management, sustainability, and environmental conservation.</p>
+        <img src="certificates/Environmental Science.png" class="cert-img" alt="Environmental Science Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Environmental Science.png','Environmental Science','NPTEL Elite Certification')">View</button>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <div class="card-icon">♻️</div>
+        <h3>Intro to Environmental Engg &amp; Science</h3>
+        <p><span class="highlight">NPTEL</span> • 2025</p>
+        <p>Sustainability concepts and environmental problem-solving approaches.</p>
+        <img src="certificates/Introduction to Environmental Engineering and Science.png" class="cert-img"
+          alt="Intro Env Engg Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Introduction to Environmental Engineering and Science.png','Introduction to Environmental Engineering & Science','NPTEL • 2025')">View</button>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h3>Introduction to HTML</h3>
+        <p><span class="highlight">Coursera Project</span>• 2025</p>
+        <p>Foundational skills in webpage structure and front-end development.</p>
+        <img src="certificates/Introduction to HTML.png" class="cert-img" alt="HTML Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Introduction to HTML.png','Introduction to HTML','Coursera Project')">View</button>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Introduction to R Programming</h3>
+        <p><span class="highlight">NPTEL</span>• 2025</p>
+        <p>Statistical computing and data analysis using R.</p>
+        <img src="certificates/Introduction to R Programming.png" class="cert-img" alt="R Programming Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/Introduction to R Programming.png','Introduction to R Programming','NPTEL Certification')">View</button>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <div class="card-icon">🐍</div>
+        <h3>Python (Basic)</h3>
+        <p><span class="highlight">HackerRank</span> • 2026</p>
+        <p>Proficiency in Python programming fundamentals and problem-solving.</p>
+        <img src="certificates/python basic.png" class="cert-img" alt="Python Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/python basic.png','Python (Basic) Skill Certification','HackerRank • 2026')">View</button>
+      </div>
+
+      <!-- 11 -->
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h3>Data Visualization: Empowering Business with Effective Insights</h3>
+        <p><span class="highlight">TATA Group (Forage)</span> • 2026</p>
+        <p>Completed practical tasks in business data visualization, insight generation, and communication.</p>
+        <img src="certificates/TATA DV.png" class="cert-img" alt="TATA Data Visualization Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/TATA DV.png','Data Visualization: Empowering Business with Effective Insights','TATA Group (Forage) • 2026')">View</button>
+      </div>
+
+      <!-- 12 -->
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h3>Master Microsoft Power BI</h3>
+        <p><span class="highlight">Alison</span> • 2026</p>
+        <p>Learned Power BI dashboards, data modeling, visualization, and business intelligence reporting.</p>
+        <img src="certificates/PowerBI.png" class="cert-img" alt="Master Microsoft Power BI Certificate">
+        <button class="view-btn"
+          onclick="showPopup('certificates/PowerBI.png','Master Microsoft Power BI','Alison • 2026')">View</button>
+      </div>
+
+    </div>
   </div>
 
-  <div class="page-grid">
-
-    <!-- 1 -->
-    <div class="card">
-      <div class="card-icon">📊</div>
-      <h3>Data Tableau Workshop</h3>
-      <p><span class="highlight">Jobaaj Learnings</span> • 2024</p>
-      <p>Gained practical knowledge in data visualization and dashboard creation.</p>
-      <img src="certificates/data tableau workshop.jpg" class="cert-img" alt="Tableau Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/data tableau workshop.jpg','Data Tableau Workshop','Jobaaj Learnings')">View</button>
-    </div>
-
-    <!-- 2 -->
-    <div class="card">
-      <div class="card-icon">🚀</div>
-      <h3>Winter Internship Technical Training</h3>
-      <p><span class="highlight">India Space Lab</span> • 2026</p>
-      <p>Drone Technology, CanSat, CubeSat, Rocketry, Remote Sensing, GIS &amp; Disaster Management.</p>
-      <img src="certificates/Indian space lab.jpeg" class="cert-img" alt="India Space Lab Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Indian space lab.jpeg','Winter Internship Technical Training','India Space Lab • 2026')">View</button>
-    </div>
-
-    <!-- 3 -->
-    <div class="card">
-      <div class="card-icon">🌍</div>
-      <h3>Google Earth Engine Workshop</h3>
-      <p><span class="highlight">NPTEL+</span> • 2025</p>
-      <p>Hands-on learning in geospatial analysis and hydrological data processing.</p>
-      <img src="certificates/workshop on google earth engine.jpg" class="cert-img" alt="Google Earth Engine Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/workshop on google earth engine.jpg','Google Earth Engine for Hydrological Applications','NPTEL+ Workshop • 2025')">View</button>
-    </div>
-
-    <!-- 4 -->
-    <div class="card">
-      <div class="card-icon">🏆</div>
-      <h3>Basic Environmental Engineering</h3>
-      <p><span class="highlight">NPTEL Elite</span> • 2025</p>
-      <p>Pollution control and sustainable environmental practices.</p>
-      <img src="certificates/Basic Environmental Engineering and Pollution Abatement.png" class="cert-img" alt="Basic Env Engg Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Basic Environmental Engineering and Pollution Abatement.png','Basic Environmental Engineering & Pollution Abatement','NPTEL Elite Certification')">View</button>
-    </div>
-
-    <!-- 5 -->
-    <div class="card">
-      <div class="card-icon">🪨</div>
-      <h3>Environmental Geosciences</h3>
-      <p><span class="highlight">NPTEL</span>• 2026</p>
-      <p>Earth systems, geology, and environmental processes.</p>
-      <img src="certificates/Environmental Geosciences.png" class="cert-img" alt="Environmental Geosciences Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Environmental Geosciences.png','Environmental Geosciences','NPTEL Certification')">View</button>
-    </div>
-
-    <!-- 6 -->
-    <div class="card">
-      <div class="card-icon">🌿</div>
-      <h3>Environmental Science</h3>
-      <p><span class="highlight">NPTEL Elite</span>• 2024</p>
-      <p>Ecosystem management, sustainability, and environmental conservation.</p>
-      <img src="certificates/Environmental Science.png" class="cert-img" alt="Environmental Science Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Environmental Science.png','Environmental Science','NPTEL Elite Certification')">View</button>
-    </div>
-
-    <!-- 7 -->
-    <div class="card">
-      <div class="card-icon">♻️</div>
-      <h3>Intro to Environmental Engg &amp; Science</h3>
-      <p><span class="highlight">NPTEL</span> • 2025</p>
-      <p>Sustainability concepts and environmental problem-solving approaches.</p>
-      <img src="certificates/Introduction to Environmental Engineering and Science.png" class="cert-img" alt="Intro Env Engg Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Introduction to Environmental Engineering and Science.png','Introduction to Environmental Engineering & Science','NPTEL • 2025')">View</button>
-    </div>
-
-    <!-- 8 -->
-    <div class="card">
-      <div class="card-icon">🌐</div>
-      <h3>Introduction to HTML</h3>
-      <p><span class="highlight">Coursera Project</span>• 2025</p>
-      <p>Foundational skills in webpage structure and front-end development.</p>
-      <img src="certificates/Introduction to HTML.png" class="cert-img" alt="HTML Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Introduction to HTML.png','Introduction to HTML','Coursera Project')">View</button>
-    </div>
-
-    <!-- 9 -->
-    <div class="card">
-      <div class="card-icon">📈</div>
-      <h3>Introduction to R Programming</h3>
-      <p><span class="highlight">NPTEL</span>• 2025</p>
-      <p>Statistical computing and data analysis using R.</p>
-      <img src="certificates/Introduction to R Programming.png" class="cert-img" alt="R Programming Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/Introduction to R Programming.png','Introduction to R Programming','NPTEL Certification')">View</button>
-    </div>
-
-    <!-- 10 -->
-    <div class="card">
-      <div class="card-icon">🐍</div>
-      <h3>Python (Basic)</h3>
-      <p><span class="highlight">HackerRank</span> • 2026</p>
-      <p>Proficiency in Python programming fundamentals and problem-solving.</p>
-      <img src="certificates/python basic.png" class="cert-img" alt="Python Certificate">
-      <button class="view-btn" onclick="showPopup('certificates/python basic.png','Python (Basic) Skill Certification','HackerRank • 2026')">View</button>
-    </div>
-
-  </div>
-</div>
-
-<!-- POPUP — all images now, no PDF embed needed -->
-<div id="popup" style="
+  <!-- POPUP — all images now, no PDF embed needed -->
+  <div id="popup" style="
   display: none;
   position: fixed;
   inset: 0;
@@ -131,7 +169,7 @@
   justify-content: center;
   align-items: center;
 ">
-  <div id="popup-box" style="
+    <div id="popup-box" style="
     position: relative;
     max-width: 110vw;
     max-height: 100vh;
@@ -143,7 +181,7 @@
     overflow-y: auto;
     overflow-x: hidden;
   ">
-    <button onclick="hidePopup()" style="
+      <button onclick="hidePopup()" style="
       position: absolute;
       top: -12px;
       right: -12px;
@@ -158,7 +196,7 @@
       cursor: pointer;
     ">×</button>
 
-    <img id="popup-img" src="" alt="Certificate" style="
+      <img id="popup-img" src="" alt="Certificate" style="
       display: block;
       max-width: 100%;
       max-height: 70vh;
@@ -167,12 +205,12 @@
       background: #020617;
     ">
 
-    <embed id="popup-pdf" src="" type="application/pdf" style="display:none;">
+      <embed id="popup-pdf" src="" type="application/pdf" style="display:none;">
 
-    <p id="popup-title" style="color:#f8fafc; font-weight:700; margin-top:12px; font-size:1rem;"></p>
-    <p id="popup-sub" style="color:#94a3b8; font-size:0.85rem; margin-top:4px;"></p>
+      <p id="popup-title" style="color:#f8fafc; font-weight:700; margin-top:12px; font-size:1rem;"></p>
+      <p id="popup-sub" style="color:#94a3b8; font-size:0.85rem; margin-top:4px;"></p>
 
-    <button onclick="hidePopup()" style="
+      <button onclick="hidePopup()" style="
       margin-top: 14px;
       padding: 10px 28px;
       border: none;
@@ -183,10 +221,11 @@
       font-weight: 600;
       cursor: pointer;
     ">Close</button>
+    </div>
   </div>
-</div>
 
-<script src="popup.js"></script>
+  <script src="popup.js"></script>
 
 </body>
+
 </html>
