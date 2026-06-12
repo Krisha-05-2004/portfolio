@@ -742,3 +742,227 @@ details[open] {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
+/* ================= MOBILE RESPONSIVE (≤ 480px) ================= */
+@media (max-width: 480px) {
+
+  /* --- Landing / Home page --- */
+  .landing {
+    grid-template-columns: 1fr;
+  }
+
+  .image-section {
+    height: 45vh;
+  }
+
+  .content-section {
+    height: auto;
+    padding: 28px 18px 36px;
+  }
+
+  .intro-name {
+    font-size: 1.6rem;
+  }
+
+  .headline {
+    font-size: 1.4rem;
+    margin-bottom: 28px;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .icon-card {
+    width: 100%;
+    height: 100px;
+    padding: 14px 10px;
+    border-radius: 12px;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .icon-card span {
+    font-size: 12px;
+  }
+
+  .name-box {
+    bottom: 16px;
+    left: 16px;
+    padding: 16px;
+    max-width: calc(100% - 32px);
+  }
+
+  .name-box h1 {
+    font-size: 1.4rem;
+  }
+
+  .update-note {
+    font-size: 0.85rem;
+    margin-top: 20px;
+  }
+
+  /* --- Back link (all inner pages) --- */
+  .back-link {
+    position: static;
+    display: inline-block;
+    margin: 16px 0 0 16px;
+    font-size: 0.9rem;
+  }
+
+  /* --- Detail pages (about, skills, projects, etc.) --- */
+  .detail-page {
+    padding: 16px 0 30px;
+  }
+
+  .page-title {
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+
+  .page-title h1 {
+    font-size: 1.7rem;
+  }
+
+  .page-grid {
+    padding: 0 14px;
+    gap: 16px;
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .card p,
+  .card ul li {
+    font-size: 0.88rem;
+  }
+
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  /* --- Certificate image preview --- */
+  .cert-img {
+    height: 130px;
+  }
+
+  /* --- Contact page --- */
+  .contact-page {
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+
+  .contact-wrapper {
+    width: 92%;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .main-contact {
+    padding: 20px 18px;
+  }
+
+  .main-contact h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 16px 14px;
+    gap: 12px;
+  }
+
+  /* --- Get In Touch form --- */
+  .touch-container {
+    width: 94%;
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .touch-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .touch-form input,
+  .touch-form textarea {
+    font-size: 13px;
+    padding: 13px;
+  }
+
+  .touch-form button {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  /* --- Tags --- */
+  .tags span {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  /* --- Resume button --- */
+  .resume-btn {
+    font-size: 0.85rem;
+    padding: 8px 14px;
+  }
+}
+
+/* ================= TABLET (481px – 768px) ================= */
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .landing {
+    grid-template-columns: 1fr;
+  }
+
+  .image-section {
+    height: 50vh;
+  }
+
+  .content-section {
+    height: auto;
+    padding: 36px 28px;
+  }
+
+  .headline {
+    font-size: 1.8rem;
+  }
+
+  .icon-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  .icon-card {
+    width: 100%;
+  }
+
+  .back-link {
+    position: static;
+    display: inline-block;
+    margin: 20px 0 0 20px;
+  }
+
+  .page-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
+  }
+
+  .page-title {
+    padding: 0 20px;
+  }
+
+  .contact-wrapper {
+    width: 92%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
